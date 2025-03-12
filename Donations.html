@@ -1,0 +1,295 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Editorial by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+		<script src="ripples.js"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+							<header id="header">
+
+									<a href="index.html" class="logo">
+										<img src="images/wecarelogo.jpg" alt="We Care Trust Logo">
+									</a>
+									<ul class="icons">
+										<li>
+											<a href="Donations.html" class="button primary">Donate</a>
+										</li>
+									</ul>
+								</header>
+								
+    <!-- Hero Section -->
+    <section class="hero">
+		
+			<h1>DONATIONS, MEMORIAL AND CORPUS FUNDS</h1>
+			<h2>
+			From the People Who Care!<br>For it is in giving that you will receive!</h2>
+			
+			<p>Dear Friends, donors, benefactors, and well-wishers, we are confident that you will continue to encourage our work with your generous donations and support us with your prayers. We rely on your generosity and goodwill to carry out programmes that benefit the poor and needy.</p>
+			
+			<p class="contact">You can reach out to us on email (<b><a href="mailto:wecaretrust1999@gmail.com">wecaretrust1999@gmail.com</a></b>)</span> or on WhatsApp (<b><a href="https://wa.me/919844030002" target="_blank">+91 9844030002</a></b>)</span> for further information on how to make a donation.
+			<br>	We will be happy to assist you!
+			</p>
+			
+
+			<span class="image main"><img src="images/DONATE.png" alt="" /></span>
+
+        </section>
+
+		<section class="faq">
+			<h2>Frequently Asked Questions</h2>
+			
+			<h3 class="faq-heading">1. Donations</h3>
+			<ul>
+				<li><strong>Q: Who can donate to We Care?</strong><br>A: Donations are welcome from Individuals, Business entities and Not-for-profit organizations.</li>
+				<li><strong>Q: How can I donate as an individual citizen of India?</strong><br>A: You can make a donation through Cash, Account Payee Cheque or Demand Draft, Bank Transfer, and Digital Transfer.</li>
+				<li><strong>Q: Are donations to We Care eligible for tax credits?</strong><br>A: Yes, donations to We Care are eligible for tax benefits under Section 80G of the Income Tax Act, subject to the conditions specified in the Act.</li>
+				<li><strong>Q: What are the bank account details for making a donation?</strong><br>A: To receive our bank account details, please contact us</a>. We’ll be happy to assist you!</li>
+			</ul>
+		
+			<h3 class="faq-heading">2. Documentation</h3>
+			<ul>
+				<li><strong>Q: What documents are needed to support a donation from an Indian citizen?</strong><br>A: To support your donation, provide donation details, personal information (Name, Address, PAN, Aadhaar, Nationality), and a donation letter stating the purpose. If residing abroad, include a copy of a valid Indian passport. Additional documents may be required as per regulations.</li>
+				<li><strong>Q: What documents are required to support a donation from a foreign citizen?</strong><br>A: Provide donation details, a letter stating the purpose, and personal or entity information (Name, Address, Contact Details, Nationality). Additional documents may be needed as per regulations.</li>
+			</ul>
+		
+			<h3 class="faq-heading">3. Authorized Collection</h3>
+			<ul>
+				<li><strong>Q: Does We Care have authorized agents to collect donations?</strong><br>A: No, We Care does not have any authorized agents to collect donations.</li>
+				<li><strong>Q: Does We Care accept donations in kind?</strong><br>A: Yes, We Care accepts donations in kind. For more information or to discuss the types of contributions we accept, please contact us</a>.</li>
+			</ul>
+		</section>
+
+		<section class="donation-letter">
+			<h2>Corpus Donation Letter</h2>
+			<form id="donationForm">
+				<label for="date">Date:</label>
+				<input type="date" id="date" required>
+		
+				<label for="name">Full Name (as per PAN):</label>
+				<input type="text" id="name" required>
+		
+				<label for="address">Full Address (as per PAN):</label>
+				<textarea id="address" required></textarea>
+		
+				<label for="pan">PAN:</label>
+				<input type="text" id="pan" required>
+		
+				<label for="aadhar">Aadhar:</label>
+				<input type="text" id="aadhar" required>
+		
+				<label for="mobile">Mobile:</label>
+				<input type="tel" id="mobile" required>
+		
+				<label for="email">Email:</label>
+				<input type="email" id="email" required>
+		
+				<label for="amount">Sum of Rs (in figures):</label>
+				<input type="number" id="amount" required>
+		
+				<label for="amountWords">Rupees (in words):</label>
+				<input type="text" id="amountWords" required>
+		
+				<label for="paymentMethod">Remitted by:</label>
+				<select id="paymentMethod" required>
+					<option value="Cash">Cash</option>
+					<option value="Cheque">Cheque</option>
+					<option value="Bank Transfer">Bank Transfer</option>
+					<option value="Digital Transfer">Digital Transfer</option>
+				</select>
+		
+				<label for="datePaid">On (date):</label>
+				<input type="date" id="datePaid" required>
+		
+				<label for="transactionNumber">Bearing number:</label>
+				<input type="text" id="transactionNumber" required>
+		
+				<label for="bank">Name of Bank:</label>
+				<input type="text" id="bank" required>
+		
+				<label for="purpose">Towards (purpose):</label>
+				<select id="purpose" required>
+					<option value="Education">Education</option>
+					<option value="Medical Care">Medical Care</option>
+					<option value="Help for the Poor">Help for the Poor</option>
+					<option value="Fund">Fund</option>
+				</select>
+		
+				<label for="fundName">Name of the Fund:</label>
+				<input type="text" id="fundName" required>
+		
+				<button type="button" onclick="generateEmail()" class="btn-primary">Generate Letter</button>
+			</form>
+
+			<div id="output" class="letter-output" style="display: none;">
+				<h3>Kindly Copy this Letter and Email it to us at wecare1999@gmail.com:</h3>
+				<div id="generatedLetter" class="letter-content"></div>
+				<button onclick="copyLetter()" class="btn-secondary">Copy to Clipboard</button>
+			</div>
+		</section>
+		
+
+		<section class="hero">
+			<span class="image main"><img src="images/Volunteer.png" alt="" /></span>
+			<h2>To Volunteer, please contact us for details. </h2><br>
+				<h3>Email: <u><a href="mailto:wecaretrust1999@gmail.com">wecaretrust1999@gmail.com</a></u>
+					<br>
+					WhatsApp: <u><a href="https://wa.me/919844030002" target="_blank">+91 9844030002</a></u> </h3>
+			</p>
+
+
+		</div>
+		</div>
+
+
+				<!-- Sidebar -->
+				<div id="sidebar">
+					<div class="inner">
+
+						
+
+						<!-- Menu -->
+							<nav id="menu">
+								<header class="major">
+								</header>
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="about.html">About</a></li>
+									<li><a href="programmes.html">Programmes</a></li>
+									
+								
+									<li><a href="Donations.html">Donations</a></li>
+									<li><a href="events.html">Events</a></li>
+									<li><a href="events.html#photo-gallery">Gallery</a></li>
+								
+									<li><a href="Newsletters.html">Newletters</a></li>
+									<li><a href="Accounts.html">Accounts</a></li>
+									<li><a href="FAq.html">FAQs</a></li>
+
+								</ul>
+							</nav>
+
+						<!-- Section -->
+							<section>
+								<header class="major">
+									<h2>Get in touch</h2>
+								</header>
+								<ul class="contact">
+									<li class="icon solid fa-envelope"><a href="#">wecare1999@gmail.com</a></li>
+									<li class="icon solid fa-phone">080-22501062</li>
+									<li class="icon solid fa-home">Pratiksha Nivas, <br>
+										No. 14 (Old 127), 2nd Main Road <br>
+										1st Cross, Brindavan Nagar , Chikka Adugodi Extension  <br>
+										Bangalore - 560029<br>
+										Karnataka, India.
+										</li>
+								</ul>
+							</section>
+
+						<!-- Footer -->
+							<footer id="footer">
+								<p class="copyright">&copy; We Care Trust</p>
+							</footer>
+
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				function generateEmail() {
+					const date = document.getElementById('date').value;
+					const name = document.getElementById('name').value;
+					const address = document.getElementById('address').value;
+					const pan = document.getElementById('pan').value;
+					const aadhar = document.getElementById('aadhar').value;
+					const mobile = document.getElementById('mobile').value;
+					const email = document.getElementById('email').value;
+					const amount = document.getElementById('amount').value;
+					const amountWords = document.getElementById('amountWords').value;
+					const paymentMethod = document.getElementById('paymentMethod').value;
+					const datePaid = document.getElementById('datePaid').value;
+					const transactionNumber = document.getElementById('transactionNumber').value;
+					const bank = document.getElementById('bank').value;
+					const purpose = document.getElementById('purpose').value;
+					const fundName = document.getElementById('fundName').value;
+				
+					// Format the letter content
+					const letter = `
+				Title: CORPUS DONATION LETTER
+				
+				Date: ${date}
+				
+				From:
+				Full Name: ${name}
+				Address: ${address}
+				PAN: ${pan}
+				Aadhar: ${aadhar}
+				Mobile: ${mobile}
+				Email: ${email}
+				
+				Dear We Care,
+				I have made a corpus donation to We Care, the details are given below:
+				
+				Sum of Rs (in figures): ${amount}
+				Rupees (in words): ${amountWords}
+				Remitted by: ${paymentMethod}
+				On (date): ${datePaid}
+				Bearing number: ${transactionNumber}
+				Name of bank: ${bank}
+				Towards (purpose): ${purpose}
+				Name of the fund: ${fundName}
+				
+				I declare that I am an Indian Citizen on the date of the donation.
+				I declare that this donation has been made from my taxable income.
+				Kindly acknowledge receipt.
+				Thank you.
+				
+				 ${name}
+				`;
+				
+					// Display the letter below the form
+					document.getElementById('generatedLetter').textContent = letter;
+					document.getElementById('output').style.display = 'block';
+				
+					// Generate mailto link
+					const subject = "Corpus Donation Letter Submission";
+					const mailtoLink = `mailto:wecaretrust1999@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(letter)}`;
+					
+					// Open email client
+					window.location.href = mailtoLink;
+				}
+				
+				// Copy to clipboard function
+				function copyLetter() {
+					const letterText = document.getElementById('generatedLetter').textContent;
+					navigator.clipboard.writeText(letterText).then(() => {
+						alert("Letter copied to clipboard!");
+					}).catch(err => {
+						alert("Failed to copy letter. Please try again.");
+						console.error("Error:", err);
+					});
+				}
+				</script>
+				
+</body>		
+</html>

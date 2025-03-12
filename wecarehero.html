@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Care Trust</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Georgia', serif;
+        }
+
+        body {
+            background-color: #fff;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            border-bottom: 1px solid #f5d1d1;
+        }
+
+        .logo img {
+            height: 60px;
+        }
+
+        .menu-icon {
+            font-size: 30px;
+            color: #d96f6f;
+            cursor: pointer;
+            display: none;
+        }
+
+        .donate-btn {
+            background-color: #d96f6f;
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .donate-btn:hover {
+            background-color: #c55656;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #3a5a40;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            font-weight: bold;
+            padding: 12px 30px;
+            border: 2px solid #d96f6f;
+            border-radius: 25px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .buttons .btn-primary {
+            background-color: #d96f6f;
+            color: #fff;
+        }
+
+        .buttons .btn-primary:hover {
+            background-color: #c55656;
+            border-color: #c55656;
+        }
+
+        .buttons .btn-secondary {
+            color: #d96f6f;
+            background-color: #fff;
+        }
+
+        .buttons .btn-secondary:hover {
+            background-color: #d96f6f;
+            color: #fff;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .menu-icon {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="https://i.imgur.com/6bZySLM.png" alt="We Care Logo">
+        </div>
+        <div class="menu-icon">&#9776;</div>
+        <a href="#donate" class="donate-btn">DONATE</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Reaching Out in Love & Service<br>Because Nothing Else Matters</h1>
+        <p>Join hands with us to empower lives, bring smiles, and build hope for a better tomorrow.</p>
+        <div class="buttons">
+            <a href="#donate" class="btn-primary">DONATE</a>
+            <a href="#programs" class="btn-secondary">EXPLORE PROGRAMS</a>
+        </div>
+    </section>
+</body>
+</html>
